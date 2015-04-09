@@ -153,7 +153,12 @@ public class KMeans {
 		}
 		return veriler;
 	}
-
+	
+	
+	/*
+	 * 
+	 * 
+	 */
 	public static double[][] merkezleriBelirle(double[][] kumelemeVerileri) {
 		double merkezler[][] = new double[KUME_ADEDI][2];
 
