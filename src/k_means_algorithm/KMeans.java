@@ -156,8 +156,14 @@ public class KMeans {
 	
 	
 	/*
+	 * Kmeans algoritmasinin ilk iterasyonunda belirtmemiz gereken merkezleri
+	 * bu method yardimiyla random sekilde belirliyoruz.
+	 * Method kendi icerisinde gerekli kontrolleri yaparak ayni merkezi iki defa
+	 * secmeyi de engelleyebiliyor.
 	 * 
+	 * @param kumelemeVerileri: veri setimiz icerisinden merkezleri belirlemek icin
 	 * 
+	 * @return uretilen merkez noktalarini iceren 2 boyutlu (x,y) dizi
 	 */
 	public static double[][] merkezleriBelirle(double[][] kumelemeVerileri) {
 		double merkezler[][] = new double[KUME_ADEDI][2];
